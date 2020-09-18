@@ -55,6 +55,11 @@
   color: "#b05b3c"
   boilingPoint: 78.2
   meltingPoint: -114.1
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 30
+
 
 - type: reagent
   id: chem.Glucose

@@ -5,6 +5,10 @@
   physicalDesc: strong-smelling
   color: "#664300"
   spritePath: whiskeyglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Ale
@@ -13,6 +17,10 @@
   physicalDesc: bubbly
   color: "#663100"
   spritePath: aleglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Wine
@@ -21,6 +29,10 @@
   physicalDesc: translucent
   color: "#7E4043"
   spritePath: wineglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Beer
@@ -29,6 +41,10 @@
   physicalDesc: bubbly
   color: "#cfa85f"
   spritePath: beerglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Vodka
@@ -36,6 +52,10 @@
   desc: The glass contain wodka. Xynta.
   physicalDesc: strong-smelling
   color: "#d1d1d155"
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Moonshine
@@ -43,6 +63,10 @@
   desc: Artisanal homemade liquor. What could go wrong?
   physicalDesc: strong-smelling
   color: "#d1d7d155"
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Tequila
@@ -50,6 +74,10 @@
   desc: This stuff will get you fucked up.
   physicalDesc: strong-smelling
   color: "#d7d1d155"
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Kahlua
@@ -66,6 +94,10 @@
   physicalDesc: strong-smelling
   color: "#AB3C05"
   spritePath: cognacglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.ManlyDorf
@@ -74,6 +106,10 @@
   physicalDesc: bubbly
   color: "#664300"
   spritePath: manlydorfglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.CubaLibre
@@ -82,6 +118,10 @@
   physicalDesc: bubbly
   color: "#3E1B00"
   spritePath: cubalibreglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.IrishCarBomb
@@ -90,6 +130,10 @@
   physicalDesc: bubbly
   color: "#2E6671"
   spritePath: irishcarbomb.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.IrishCoffee
@@ -98,6 +142,10 @@
   physicalDesc: cloudy
   color: "#664300"
   spritePath: irishcoffeeglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.IrishCream
@@ -106,6 +154,10 @@
   physicalDesc: creamy
   color: "#664300"
   spritePath: irishcreamglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.B52
@@ -114,6 +166,10 @@
   physicalDesc: bubbly
   color: "#664300"
   spritePath: b52glass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.AtomicBomb
@@ -122,6 +178,10 @@
   physicalDesc: cloudy
   color: "#666300"
   spritePath: atomicbombglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.WhiskeyCola
@@ -130,6 +190,10 @@
   physicalDesc: bubbly
   color: "#3E1B00"
   spritePath: whiskeycolaglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.SyndicateBomb
@@ -138,6 +202,10 @@
   physicalDesc: opaque
   color: "#2E6660"
   spritePath: syndicatebomb.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
+      alcoholFactor: 1
 
 - type: reagent
   id: chem.Antifreeze

@@ -28,6 +28,7 @@
     digestionDelay: 20
   # StatusEffects
   - type: Stunnable
+  - type: Drunk
   # Other
   - type: Inventory
   - type: Clickable

@@ -69,6 +69,11 @@ namespace Content.Server.GlobalVerbs
                 thirst.ResetThirst();
             }
 
+            if (target.TryGetComponent(out DrunkComponent drunk))
+            {
+                drunk.ResetDrunk();
+            }
+
             if (target.TryGetComponent(out StunnableComponent stun))
             {
                 stun.ResetStuns();
