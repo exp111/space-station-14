@@ -71,6 +71,9 @@ namespace Content.Server.GameObjects.Components.Nutrition
 
         public void OnUpdate(float frametime)
         {
+            if (_currentDrunk <= 0)
+                return;
+
             _currentDrunk -= frametime * BaseDecayRate; //TODO: actualDecayRate?
             var calculatedThirstThreshold = GetDrunkThreshold(_currentDrunk);
             if (calculatedThirstThreshold != _currentDrunkThreshold)

@@ -8,6 +8,7 @@ using Robust.Shared.IoC;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Content.Server.GameObjects.EntitySystems
 {
@@ -34,16 +35,30 @@ namespace Content.Server.GameObjects.EntitySystems
             };
         }
 
+        private readonly Regex _drunkRegex = new Regex("(k|nk|ck|s|th|nt|t)", RegexOptions.IgnoreCase);
         private string Drunkify(string message)
         {
-            // Algo taken from Goonstation accents.dm at e788c98304bfe25d0eb8188c22332edd1426714d
+            // Taken from Goonstation accents.dm at e788c98304bfe25d0eb8188c22332edd1426714d
             //k => g, nk/ck => gh
             //s => sh
             //t => ff, th => du, nt => thf
-            return message.
-                Replace("k", "g").Replace("nk", "gh").Replace("nk", "gh").
-                Replace("s", "sh").
-                Replace("th", "du").Replace("nt", "hf").Replace("t", "ff");
+            return _drunkRegex.Replace(message, DrunkMatcher);
+        }
+
+        private string DrunkMatcher(Match match)
+        {
+            var upper = match.Length > 0 && char.IsUpper(match.Value[0]);
+            return match.Value.ToLower() switch
+            {
+                "k" => upper ? "G" : "g",
+                "nk" => upper ? "GH" : "gh",
+                "ck" => upper ? "GH" : "gh",
+                "s" => upper ? "SH" : "sh",
+                "th" => upper ? "DU" : "du",
+                "nt" => upper ? "THF" : "thf",
+                "t" => upper ? "FF" : "ff",
+                _ => match.Value,
+            };
         }
 
         public override void Update(float frameTime)
