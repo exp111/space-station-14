@@ -31,7 +31,7 @@ namespace Content.Server.GameObjects.Components.Nutrition
         private float _currentDrunk = 0.0f;
 
         private DrunkThreshold _currentDrunkThreshold = DrunkThreshold.No;
-        [ViewVariables(VVAccess.ReadWrite)]
+        [ViewVariables(VVAccess.ReadOnly)]
         public override DrunkThreshold CurrentDrunkThreshold => _currentDrunkThreshold;
 
         //TODO: alcoholResistance

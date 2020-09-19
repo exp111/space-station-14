@@ -1,5 +1,6 @@
 ﻿using Content.Server.GameObjects.Components.Nutrition;
 using Content.Server.Interfaces.Chat;
+using Content.Shared.GameObjects.Components.Nutrition;
 using Content.Shared.GameObjects.Components.Observer;
 using Robust.Shared.GameObjects.Systems;
 using Robust.Shared.Interfaces.GameObjects;
@@ -25,11 +26,24 @@ namespace Content.Server.GameObjects.EntitySystems
             if (!speaker.TryGetComponent(out DrunkComponent drunk))
                 return message;
 
-            if (drunk.CurrentDrunkThreshold > Shared.GameObjects.Components.Nutrition.DrunkThreshold.Drunk)
+            return drunk.CurrentDrunkThreshold switch
             {
-                return $"DRUNK: {message}";
-            }
-            return message;
+                //TODO: DrunkThreshold d when d > DrunkThreshold.Blackout => SuperDrunkify(message),
+                DrunkThreshold d when d >= DrunkThreshold.Drunk => Drunkify(message),
+                _ => message,
+            };
+        }
+
+        private string Drunkify(string message)
+        {
+            // Algo taken from Goonstation accents.dm at e788c98304bfe25d0eb8188c22332edd1426714d
+            //k => g, nk/ck => gh
+            //s => sh
+            //t => ff, th => du, nt => thf
+            return message.
+                Replace("k", "g").Replace("nk", "gh").Replace("nk", "gh").
+                Replace("s", "sh").
+                Replace("th", "du").Replace("nt", "hf").Replace("t", "ff");
         }
 
         public override void Update(float frameTime)
