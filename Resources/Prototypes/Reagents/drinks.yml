@@ -8,7 +8,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Ale
@@ -20,7 +19,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Wine
@@ -32,7 +30,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Beer
@@ -44,7 +41,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Vodka
@@ -55,7 +51,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Moonshine
@@ -66,7 +61,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Tequila
@@ -77,7 +71,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Kahlua
@@ -86,6 +79,9 @@
   physicalDesc: cloudy
   color: "#664300"
   spritePath: kahluaglass.rsi
+  metabolism:
+    - !type:AlcoholicDrink
+      rate: 1
 
 - type: reagent
   id: chem.Cognac
@@ -97,7 +93,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.ManlyDorf
@@ -109,7 +104,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.CubaLibre
@@ -121,7 +115,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.IrishCarBomb
@@ -133,7 +126,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.IrishCoffee
@@ -145,7 +137,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.IrishCream
@@ -157,7 +148,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.B52
@@ -169,7 +159,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.AtomicBomb
@@ -181,7 +170,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.WhiskeyCola
@@ -193,7 +181,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.SyndicateBomb
@@ -205,7 +192,6 @@
   metabolism:
     - !type:AlcoholicDrink
       rate: 1
-      alcoholFactor: 1
 
 - type: reagent
   id: chem.Antifreeze

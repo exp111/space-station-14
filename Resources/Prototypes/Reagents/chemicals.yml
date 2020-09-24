@@ -56,9 +56,9 @@
   boilingPoint: 78.2
   meltingPoint: -114.1
   metabolism:
-    - !type:AlcoholicDrink
+    - !type:Ethanol
       rate: 1
-      alcoholFactor: 30
+      alcoholFactor: 10
 
 
 - type: reagent
