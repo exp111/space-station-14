@@ -1,0 +1,12 @@
+- type: entity
+  name: randomcomp
+  parent: BaseItem
+  id: RandomComp
+  description: What is this black magic?
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/multitool.rsi
+    state: multitool
+  - type: Item
+    sprite: Objects/Tools/multitool.rsi
+  - type: RandomComponentGun
